@@ -1,9 +1,92 @@
 {
-    "app": {
-        "hosts": "appserver"
-        
-    }, 
-    "db": {
-        "hosts": "35.228.132.193"
-    }
+   "reddit-db-base1548184535" : [
+      "reddit-db"
+   ],
+   "reddit-app-base1548183970" : [
+      "reddit-app"
+   ],
+   "_meta" : {
+      "stats" : {
+         "cache_used" : true,
+         "inventory_load_time" : 0.00133180618286133
+      },
+      "hostvars" : {
+         "reddit-db" : {
+            "gce_private_ip" : "10.166.0.17",
+            "gce_description" : null,
+            "gce_metadata" : {
+               "ssh-keys" : "appuser:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+6usNjGZmSnwTqE+rllczksPa+L5gK0u8WdoI9ZVcaEfZ0Dz7crQAwF9pf9DLSQXUDHgKMGt4yMTURQ4FBsni+BLBy+2UEdOj8kGMu1nSfOyMVMqz8qh82P69CNeS2KneAXk+GcI8UTfQ0UPYciSEvs4ZRIWu0iT10iY58Uq7u3zre7EYpGkEUJD83Bg4NP+Hg9N+gWrwRqf4jg5nmIMvZvXeoCWc4ruz3OlQ0KCm82BaAkDQIv3u69IwLDzG1HTyolYLWR7/eslojCVPJ8ngZtp7+Ds0C4vv1Blevuedg507WW3eTtVYpPMje4cul0DeMftWcG/Rlx/xjQtdtmrz kalinkin@Yaroslavs-MacBook-Pro.local\n"
+            },
+            "gce_network" : "default",
+            "gce_image" : "reddit-db-base1548184535",
+            "gce_tags" : [
+               "reddit-db"
+            ],
+            "gce_status" : "RUNNING",
+            "gce_machine_type" : "g1-small",
+            "gce_name" : "reddit-db",
+            "gce_public_ip" : "35.228.137.89",
+            "gce_id" : "8022169230816704819",
+            "gce_subnetwork" : "default",
+            "ansible_ssh_host" : "35.228.137.89",
+            "gce_uuid" : "64125f30679aa1ccf2de9100abe78e3e14caffbf",
+            "gce_zone" : "europe-north1-a"
+         },
+         "reddit-app" : {
+            "gce_network" : "default",
+            "gce_metadata" : {
+               "ssh-keys" : "appuser:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+6usNjGZmSnwTqE+rllczksPa+L5gK0u8WdoI9ZVcaEfZ0Dz7crQAwF9pf9DLSQXUDHgKMGt4yMTURQ4FBsni+BLBy+2UEdOj8kGMu1nSfOyMVMqz8qh82P69CNeS2KneAXk+GcI8UTfQ0UPYciSEvs4ZRIWu0iT10iY58Uq7u3zre7EYpGkEUJD83Bg4NP+Hg9N+gWrwRqf4jg5nmIMvZvXeoCWc4ruz3OlQ0KCm82BaAkDQIv3u69IwLDzG1HTyolYLWR7/eslojCVPJ8ngZtp7+Ds0C4vv1Blevuedg507WW3eTtVYpPMje4cul0DeMftWcG/Rlx/xjQtdtmrz kalinkin@Yaroslavs-MacBook-Pro.local\n"
+            },
+            "gce_image" : "reddit-app-base1548183970",
+            "gce_tags" : [
+               "reddit-app"
+            ],
+            "gce_private_ip" : "10.166.0.18",
+            "gce_description" : null,
+            "gce_subnetwork" : "default",
+            "gce_uuid" : "034ea1d71aba4810bf9e29ba59055bf0ff0d5f22",
+            "ansible_ssh_host" : "35.228.92.153",
+            "gce_zone" : "europe-north1-a",
+            "gce_status" : "RUNNING",
+            "gce_machine_type" : "g1-small",
+            "gce_public_ip" : "35.228.92.153",
+            "gce_id" : "58668533904963847",
+            "gce_name" : "reddit-app"
+         }
+      }
+   },
+   "35.228.92.153" : [
+      "reddit-app"
+   ],
+   "g1-small" : [
+      "reddit-app",
+      "reddit-db"
+   ],
+   "network_default" : [
+      "reddit-app",
+      "reddit-db"
+   ],
+   "tag_reddit-app" : [
+      "reddit-app"
+   ],
+   "10.166.0.17" : [
+      "reddit-db"
+   ],
+   "35.228.137.89" : [
+      "reddit-db"
+   ],
+   "status_running" : [
+      "reddit-app",
+      "reddit-db"
+   ],
+   "europe-north1-a" : [
+      "reddit-app",
+      "reddit-db"
+   ],
+   "10.166.0.18" : [
+      "reddit-app"
+   ],
+   "tag_reddit-db" : [
+      "reddit-db"
+   ]
 }

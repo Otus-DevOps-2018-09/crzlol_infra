@@ -1,0 +1,191 @@
+{
+    "_meta": {
+        "hostvars": {
+            "reddit-app": {
+                "ansible_host": "35.228.253.93", 
+                "cpuPlatform": "Intel Skylake", 
+                "creationTimestamp": "2019-01-23T04:45:14.015-08:00", 
+                "deletionProtection": false, 
+                "disks": [
+                    {
+                        "autoDelete": true, 
+                        "boot": true, 
+                        "deviceName": "persistent-disk-0", 
+                        "guestOsFeatures": [
+                            {
+                                "type": "VIRTIO_SCSI_MULTIQUEUE"
+                            }
+                        ], 
+                        "index": 0, 
+                        "interface": "SCSI", 
+                        "kind": "compute#attachedDisk", 
+                        "licenses": [
+                            "https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/licenses/ubuntu-1604-xenial"
+                        ], 
+                        "mode": "READ_WRITE", 
+                        "source": "https://www.googleapis.com/compute/v1/projects/extended-study-224312/zones/europe-north1-a/disks/reddit-app", 
+                        "type": "PERSISTENT"
+                    }
+                ], 
+                "id": "3599939348006821686", 
+                "kind": "compute#instance", 
+                "labelFingerprint": "42WmSpB8rSM=", 
+                "machineType": "g1-small", 
+                "machineType_selflink": "https://www.googleapis.com/compute/v1/projects/extended-study-224312/zones/europe-north1-a/machineTypes/g1-small", 
+                "metadata": {
+                    "fingerprint": "A0reh1VGUOU=", 
+                    "items": [
+                        {
+                            "key": "ssh-keys", 
+                            "value": "appuser:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+6usNjGZmSnwTqE+rllczksPa+L5gK0u8WdoI9ZVcaEfZ0Dz7crQAwF9pf9DLSQXUDHgKMGt4yMTURQ4FBsni+BLBy+2UEdOj8kGMu1nSfOyMVMqz8qh82P69CNeS2KneAXk+GcI8UTfQ0UPYciSEvs4ZRIWu0iT10iY58Uq7u3zre7EYpGkEUJD83Bg4NP+Hg9N+gWrwRqf4jg5nmIMvZvXeoCWc4ruz3OlQ0KCm82BaAkDQIv3u69IwLDzG1HTyolYLWR7/eslojCVPJ8ngZtp7+Ds0C4vv1Blevuedg507WW3eTtVYpPMje4cul0DeMftWcG/Rlx/xjQtdtmrz kalinkin@Yaroslavs-MacBook-Pro.local\n"
+                        }
+                    ], 
+                    "kind": "compute#metadata"
+                }, 
+                "name": "reddit-app", 
+                "networkInterfaces": [
+                    {
+                        "accessConfigs": [
+                            {
+                                "kind": "compute#accessConfig", 
+                                "name": "external-nat", 
+                                "natIP": "35.228.253.93", 
+                                "networkTier": "PREMIUM", 
+                                "type": "ONE_TO_ONE_NAT"
+                            }
+                        ], 
+                        "fingerprint": "BA8kTU12JeA=", 
+                        "kind": "compute#networkInterface", 
+                        "name": "nic0", 
+                        "network": {
+                            "name": "default", 
+                            "region": "global", 
+                            "selfLink": "https://www.googleapis.com/compute/v1/projects/extended-study-224312/global/networks/default"
+                        }, 
+                        "networkIP": "10.166.0.21", 
+                        "subnetwork": {
+                            "name": "default", 
+                            "region": "europe-north1", 
+                            "selfLink": "https://www.googleapis.com/compute/v1/projects/extended-study-224312/regions/europe-north1/subnetworks/default"
+                        }
+                    }
+                ], 
+                "project": "extended-study-224312", 
+                "scheduling": {
+                    "automaticRestart": true, 
+                    "onHostMaintenance": "MIGRATE", 
+                    "preemptible": false
+                }, 
+                "selfLink": "https://www.googleapis.com/compute/v1/projects/extended-study-224312/zones/europe-north1-a/instances/reddit-app", 
+                "startRestricted": false, 
+                "status": "RUNNING", 
+                "tags": {
+                    "fingerprint": "M-ggixIz-AU=", 
+                    "items": [
+                        "reddit-app"
+                    ]
+                }, 
+                "zone": "europe-north1-a", 
+                "zone_selflink": "https://www.googleapis.com/compute/v1/projects/extended-study-224312/zones/europe-north1-a"
+            }, 
+            "reddit-db": {
+                "ansible_host": "35.228.132.193", 
+                "cpuPlatform": "Intel Skylake", 
+                "creationTimestamp": "2019-01-23T04:45:03.071-08:00", 
+                "deletionProtection": false, 
+                "disks": [
+                    {
+                        "autoDelete": true, 
+                        "boot": true, 
+                        "deviceName": "persistent-disk-0", 
+                        "guestOsFeatures": [
+                            {
+                                "type": "VIRTIO_SCSI_MULTIQUEUE"
+                            }
+                        ], 
+                        "index": 0, 
+                        "interface": "SCSI", 
+                        "kind": "compute#attachedDisk", 
+                        "licenses": [
+                            "https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/licenses/ubuntu-1604-xenial"
+                        ], 
+                        "mode": "READ_WRITE", 
+                        "source": "https://www.googleapis.com/compute/v1/projects/extended-study-224312/zones/europe-north1-a/disks/reddit-db", 
+                        "type": "PERSISTENT"
+                    }
+                ], 
+                "id": "5021930335980871458", 
+                "kind": "compute#instance", 
+                "labelFingerprint": "42WmSpB8rSM=", 
+                "machineType": "g1-small", 
+                "machineType_selflink": "https://www.googleapis.com/compute/v1/projects/extended-study-224312/zones/europe-north1-a/machineTypes/g1-small", 
+                "metadata": {
+                    "fingerprint": "A0reh1VGUOU=", 
+                    "items": [
+                        {
+                            "key": "ssh-keys", 
+                            "value": "appuser:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+6usNjGZmSnwTqE+rllczksPa+L5gK0u8WdoI9ZVcaEfZ0Dz7crQAwF9pf9DLSQXUDHgKMGt4yMTURQ4FBsni+BLBy+2UEdOj8kGMu1nSfOyMVMqz8qh82P69CNeS2KneAXk+GcI8UTfQ0UPYciSEvs4ZRIWu0iT10iY58Uq7u3zre7EYpGkEUJD83Bg4NP+Hg9N+gWrwRqf4jg5nmIMvZvXeoCWc4ruz3OlQ0KCm82BaAkDQIv3u69IwLDzG1HTyolYLWR7/eslojCVPJ8ngZtp7+Ds0C4vv1Blevuedg507WW3eTtVYpPMje4cul0DeMftWcG/Rlx/xjQtdtmrz kalinkin@Yaroslavs-MacBook-Pro.local\n"
+                        }
+                    ], 
+                    "kind": "compute#metadata"
+                }, 
+                "name": "reddit-db", 
+                "networkInterfaces": [
+                    {
+                        "accessConfigs": [
+                            {
+                                "kind": "compute#accessConfig", 
+                                "name": "external-nat", 
+                                "natIP": "35.228.132.193", 
+                                "networkTier": "PREMIUM", 
+                                "type": "ONE_TO_ONE_NAT"
+                            }
+                        ], 
+                        "fingerprint": "IfYhfrl3unw=", 
+                        "kind": "compute#networkInterface", 
+                        "name": "nic0", 
+                        "network": {
+                            "name": "default", 
+                            "region": "global", 
+                            "selfLink": "https://www.googleapis.com/compute/v1/projects/extended-study-224312/global/networks/default"
+                        }, 
+                        "networkIP": "10.166.0.19", 
+                        "subnetwork": {
+                            "name": "default", 
+                            "region": "europe-north1", 
+                            "selfLink": "https://www.googleapis.com/compute/v1/projects/extended-study-224312/regions/europe-north1/subnetworks/default"
+                        }
+                    }
+                ], 
+                "project": "extended-study-224312", 
+                "scheduling": {
+                    "automaticRestart": true, 
+                    "onHostMaintenance": "MIGRATE", 
+                    "preemptible": false
+                }, 
+                "selfLink": "https://www.googleapis.com/compute/v1/projects/extended-study-224312/zones/europe-north1-a/instances/reddit-db", 
+                "startRestricted": false, 
+                "status": "RUNNING", 
+                "tags": {
+                    "fingerprint": "NQyRUqL7UTU=", 
+                    "items": [
+                        "reddit-db"
+                    ]
+                }, 
+                "zone": "europe-north1-a", 
+                "zone_selflink": "https://www.googleapis.com/compute/v1/projects/extended-study-224312/zones/europe-north1-a"
+            }
+        }
+    }, 
+    "all": {
+        "children": [
+            "ungrouped"
+        ]
+    }, 
+    "ungrouped": {
+        "hosts": [
+            "reddit-app", 
+            "reddit-db"
+        ]
+    }
+}
