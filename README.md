@@ -21,7 +21,7 @@ gcloud compute instances create reddit-app-3  --boot-disk-size=10GB   --image-fa
 
 Создание правила в firewall:
 gcloud compute firewall-rules create default-puma-server-cli --allow tcp:9292 --direction INGRESS --target-tags puma-server
-
+[![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/crzlol_infra.svg?branch=master)](https://travis-ci.com/Otus-DevOps-2018-09/crzlol_infra)
 testapp_IP = 35.228.253.93
 testapp_port = 9292
 

@@ -2,7 +2,9 @@
   hosts: all
   become: true
   tasks:
-    - pause: seconds=20
+    - name: Pause
+      pause:
+        seconds: 20
     - name: Update repositories cache and install packages
       apt:
         name: "{{ item }}"

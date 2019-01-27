@@ -10,7 +10,7 @@
         src: templates/mongod.conf.j2
         dest: /etc/mongod.conf
         mode: 0644
-      notify: restart mongod  
+      notify: restart mongod
   handlers:
   - name: restart mongod
     service: name=mongod state=restarted
@@ -49,7 +49,7 @@
         repo: 'https://github.com/express42/reddit.git'
         dest: /home/appuser/reddit
         version: monolith
-      
+
     - name: Bundle install
       bundler:
         state: present
