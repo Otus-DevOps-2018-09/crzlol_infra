@@ -1,5 +1,6 @@
-#db_host: "{{ hostvars['reddit-db']['networkInterfaces'][0]['networkIP'] }}"
-db_host: 10.166.0.37
+db_host: "{{ hostvars['reddit-db']['networkInterfaces'][0]['networkIP'] }}"
+#db_host: 10.166.0.37
+deploy_user: appuser
 nginx_sites:
   default:
     - listen 80
