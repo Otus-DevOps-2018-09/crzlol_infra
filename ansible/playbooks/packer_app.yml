@@ -1,15 +1,6 @@
 - name: Install Ruby
   hosts: all
   become: true
-  tasks:
-    - name: Pause
-      pause:
-        seconds: 20
-    - name: Update repositories cache and install packages
-      apt:
-        name: "{{ item }}"
-        update_cache: yes
-      loop:
-        - ruby-full
-        - ruby-bundler
-        - build-essential
+
+  roles:
+    - app
